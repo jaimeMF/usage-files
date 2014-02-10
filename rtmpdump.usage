@@ -1,0 +1,1 @@
+rtmpdump [--rtmp <url> | --app <app> | --tcUrl <url> | --playpath <path> ] ...;
