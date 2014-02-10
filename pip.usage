@@ -1,0 +1,7 @@
+INSTALL = install [--upgrade] ...;
+LIST = list [--outdated | --uptodate | --editable | --local] ...; 
+PIP_COMMANDS = <INSTALL> | <LIST> | --version;
+pip <PIP_COMMANDS>;
+pip-2.7 <PIP_COMMANDS>;
+pip-3.3 <PIP_COMMANDS>;
+pip3 <PIP_COMMANDS>;
