@@ -1,0 +1,2 @@
+watchmedo tricks [<file>] ...;
+watchmedo shell-command [--command <COMMAND> | --pattern <PATTERN> | --recursive] ...;
