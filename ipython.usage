@@ -1,4 +1,0 @@
-ipython qtconsole;
-ipython notebook;
-ipython nbconvert [--to (html|latex|markdown|rst|slides|python) | --post (pdf)]... <notebook>;
-ipython [--help];

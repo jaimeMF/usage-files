@@ -1,0 +1,7 @@
+INSTALLED_PACKAGES = !@pip@ list | sed "s/ \((.*)\)//g";
+INSTALL = install [--upgrade | --force-reinstall] ...;
+UNINSTALL = uninstall <INSTALLED_PACKAGES>;
+LIST = list [--outdated | --uptodate | --editable | --local] ...;
+SHOW = show <INSTALLED_PACKAGES>;
+PIP_COMMANDS = <INSTALL> | <LIST> | <SHOW> | <UNINSTALL>  --version;
+@pip@ <PIP_COMMANDS>;
