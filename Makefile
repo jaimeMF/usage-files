@@ -40,4 +40,4 @@ build/ipython.usage: templates/ipython.usage | build
 	$(call ipythonusage,)
 
 build/%.usage: %.usage | build
-	cp $< $@
+	ln -s ../$< $@
