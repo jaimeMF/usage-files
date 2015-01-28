@@ -1,6 +1,7 @@
 INSTALLED_PACKAGES = !@pip@ list | sed "s/ \((.*)\)//g";
-@pip@ install [--upgrade | --force-reinstall] ...;
-@pip@ uninstall <INSTALLED_PACKAGES>;
+@pip@ install [-U | --upgrade | --force-reinstall] ...;
+@pip@ uninstall [--yes] <INSTALLED_PACKAGES>;
 @pip@ list [--outdated | --uptodate | --editable | --local] ...;
-@pip@ show <INSTALLED_PACKAGES>;
+@pip@ show <INSTALLED_PACKAGES> ...;
+@pip@ freeze;
 @pip@ --version;
