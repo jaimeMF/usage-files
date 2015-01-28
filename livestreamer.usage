@@ -1,0 +1,7 @@
+STREAM = best | source | high | low | medium | mobile | worst;
+OPTIONS = (-V|--version)
+    | (-h|--help)
+    | --json
+    | (-o|--output) <FILENAME>
+    | --verbose;
+livestreamer [<OPTIONS>] ... <URL> <STREAM> [<OPTIONS>] ...;
