@@ -1,0 +1,2 @@
+ENV = !tox --listenvs;
+tox [(-e <ENV> |--showconfig | --listenvs | -v | --version | -h | --help) ...] [<ARGS>];
