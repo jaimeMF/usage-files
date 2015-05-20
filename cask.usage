@@ -1,4 +1,4 @@
-INSTALLED_CASK = !cask list -1 | sed "s/ *\((.*)\)//g";
+INSTALLED_CASK = !cask list -1 | cut -d ' ' -f 1;
 CASK = !cask search | sed "s/==>.*//";
 
 cask audit <CASK> ...;

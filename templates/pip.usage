@@ -1,4 +1,4 @@
-INSTALLED_PACKAGES = !@pip@ list | sed "s/ \((.*)\)//g";
+INSTALLED_PACKAGES = !@pip@ list | cut -d ' ' -f 1;
 @pip@ install [-U | --upgrade | --force-reinstall | (-r | --requirement) <file> ] ...;
 @pip@ uninstall [--yes] <INSTALLED_PACKAGES> ...;
 @pip@ list [--outdated | --uptodate | --editable | --local] ...;
