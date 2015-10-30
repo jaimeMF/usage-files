@@ -1,0 +1,4 @@
+EBUILD = !ls *.ebuild;
+COMMANDS = help | clean | fetch | manifest | configure | compile | test | install | merge | package;
+
+ebuild <EBUILD> [ <COMMANDS> ...];
