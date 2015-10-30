@@ -5,3 +5,4 @@ INSTALLED_PACKAGES = !@pip@ list | cut -d ' ' -f 1;
 @pip@ show <INSTALLED_PACKAGES> ...;
 @pip@ freeze;
 @pip@ --version;
+@pip@ search;
