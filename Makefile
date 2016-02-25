@@ -9,7 +9,7 @@ REPLACE_EXE = replace() \
 all:
 
 clean:
-	rm -r build
+	rm -rf build
 
 BUILD=build/.dir
 
