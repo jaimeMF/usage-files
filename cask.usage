@@ -9,6 +9,7 @@ cask edit <CASK>;
 cask home [<CASK>];
 cask (info|abv) <CASK>;
 cask install [--force] <CASK> ...;
+cask reinstall <CASK> ...;
 cask (list|ls) [-1 | -l] <INSTALLED_CASK> ...;
 cask (uninstall|rm|remove) [--force] <INSTALLED_CASK> ...;
 cask zap <INSTALLED_CASK> ...;
