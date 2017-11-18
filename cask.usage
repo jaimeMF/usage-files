@@ -15,3 +15,4 @@ cask (uninstall|rm|remove) [--force] <INSTALLED_CASK> ...;
 cask zap <INSTALLED_CASK> ...;
 cask (search|-S) <PATTERN>;
 cask update;
+cask outdated [--greedy] [--verbose|--quiet] [<INSTALLED_CASK> ...];
