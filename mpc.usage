@@ -1,0 +1,11 @@
+PLAYLIST = !mpc lsplaylist;
+mpc lsplaylists;
+mpc load [<PLAYLIST> ...];
+mpc playlist <PLAYLIST>;
+mpc toggle;
+mpc update [--wait];
+mpc shuffle;
+mpc current;
+mpc next;
+mpc prev;
+mpc help
