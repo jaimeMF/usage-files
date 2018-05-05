@@ -1,7 +1,7 @@
 // osc is the Open Build Service command line tool:
 // https://en.opensuse.org/openSUSE:OSC
 REPO = !osc repos | cut -d' ' -f 1;
-ARCH = !osc repos | cut -d' ' -f 3;
+ARCH = !osc repos | sed 's/.* //' | sort | uniq;
 SPEC = !find . -name '*.spec';
 osc build <REPO> <ARCH> [ --clean | --noinit ] <SPEC>;
 osc chroot <REPO> <ARCH>;
