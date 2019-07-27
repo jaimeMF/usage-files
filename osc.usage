@@ -3,5 +3,7 @@
 REPO = !osc repos | cut -d' ' -f 1;
 ARCH = !osc repos | sed 's/.* //' | sort | uniq;
 SPEC = !find . -name '*.spec';
+SERVICES = download_url | verify_file | set_version | tar_scm | obs_scm;
 osc build <REPO> <ARCH> [ --clean | --noinit ] <SPEC>;
 osc chroot <REPO> <ARCH>;
+osc service (remoterun | ( ( localrun | run | runall ) <SERVICES>) );
