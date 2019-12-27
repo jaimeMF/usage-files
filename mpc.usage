@@ -8,4 +8,5 @@ mpc shuffle;
 mpc current;
 mpc next;
 mpc prev;
-mpc help
+mpc help;
+mpc clear
